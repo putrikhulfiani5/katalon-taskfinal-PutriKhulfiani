@@ -11,7 +11,7 @@ Todo_2.0_APKPure
 com.avinashproduct.todo
 
 ## Tujuan 
-Tujuan testing ini adalah memastikan fitur utama pada aplikasi Todo dapat berjalan dengan baik, seperti membuat task, menghapus task, serta validasi input.
+Tujuan testing ini adalah untuk memastikan fitur utama pada aplikasi Todo berjalan dengan baik, seperti membuat task, menghapus task dan validasi input.
 
 ## Struktur Project
 Project dibuat menggunakan konsep modular test case agar lebih rapi dan mudah digunakan ulang.
@@ -49,7 +49,7 @@ Memastikan user dapat menambahkan task baru dengan data valid.
 #### Expected Result:
 Task berhasil tersimpan dan tampil pada list task.
 #### Actual Result:
-Berhasil sesuai harapan.
+Sesuai expected result.
 
 ### TC002 - Delete Task
 #### Tujuan:
@@ -61,7 +61,7 @@ Memastikan user dapat menghapus task yang sudah dibuat.
 #### Expected Result:
 Task terhapus dari daftar.
 #### Actual Result:
-Berhasil sesuai harapan.
+Sesuai expected result.
 
 ### TC003 - Validation Empty Title
 #### Tujuan:
@@ -74,7 +74,7 @@ Memastikan sistem menolak pembuatan task tanpa judul.
 #### Expected Result:
 Task gagal dibuat / muncul validasi.
 #### Actual Result:
-Berhasil sesuai harapan.
+Sesuai expected result.
 
 ## Test Suite
 Test suite dibuat untuk menjalankan seluruh test case sekaligus dengan tambahan Data Driven Testing: 
@@ -82,6 +82,12 @@ Test suite dibuat untuk menjalankan seluruh test case sekaligus dengan tambahan 
 - TC001 - Create Task
 - TC002 - Delete Task
 - TC003 - Validation Empty
+
+## Cara Menjalankan Project
+1. Buka aplikasi Katalon Studio
+2. Import project ke dalam Katalon Studio
+3. Hubungkan Android device / nyalakan emulator
+4. Jalankan Test Suite
 
 ## Kesimpulan
 Automation testing pada aplikasi Todo berhasil dijalankan menggunakan Katalon Studio pada Android real device.
