@@ -31,7 +31,7 @@ Project ini menggunakan beberapa teknik automation berikut:
 - Data Driven Testing: Digunakan pada test case Create Task dengan 3 data berbeda.
 - If Else Statement: Digunakan saat memilih bulan pada Date Picker. Jika nilai bulan lebih dari 0 maka sistem akan klik tombol Next Month sesuai jumlah data.
 - Loop Statement: Digunakan untuk mengulang klik tombol Next Month sesuai jumlah bulan.
-- Switch Case: Digunakan pada Pemilihan AM / PM, dan Pemilihan Category Task
+- Switch Case: Digunakan pada Pemilihan AM / PM dan Pemilihan Category Task
 
 ## Test Case
 ### TC001 - Create Task
