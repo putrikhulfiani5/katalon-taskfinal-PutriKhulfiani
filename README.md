@@ -77,7 +77,7 @@ Task gagal dibuat / muncul validasi.
 Berhasil sesuai harapan.
 
 ## Test Suite
-Test suite dibuat untuk menjalankan seluruh test case sekaligus: 
+Test suite dibuat untuk menjalankan seluruh test case sekaligus dengan tambahan Data Driven Testing: 
 ### Berisi:
 - TC001 - Create Task
 - TC002 - Delete Task
