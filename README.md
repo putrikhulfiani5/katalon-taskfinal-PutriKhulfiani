@@ -1,34 +1,100 @@
-# Final Project Mobile Testing - Todo App
-
+# Final Project - Mobile Automation Testing Todo App
+---
 ## Tools
 - Katalon Studio
 - Android Device
-- Appium
 
 ## Application
 Todo_2.0_APKPure
 
-Package:
+### Package:
 com.avinashproduct.todo
 
-## Test Cases
+## Tujuan 
+Tujuan testing ini adalah memastikan fitur utama pada aplikasi Todo dapat berjalan dengan baik, seperti membuat task, menghapus task, serta validasi input.
 
-1. Add Todo Task
-2. Validation Empty Task
-3. Delete Todo
+## Struktur Project
+Project dibuat menggunakan konsep modular test case agar lebih rapi dan mudah digunakan ulang.
+### Blocks/
+- OpenApp
+- AddTask
+- DeleteTask
+- Validation Task
 
-## Data Driven Testing
+### Scenario/
+- TC001-Create Task
+- TC002-Delete Task
+- TC003-Validation Empty
 
-Menggunakan 3 data:
-- Belajar Katalon
-- Meeting QA
-- Belanja Susu
+## Teknik Testing yang Digunakan
+Project ini menggunakan beberapa teknik automation berikut:
+- Data Driven Testing: Digunakan pada test case Create Task dengan 3 data berbeda.
+- If Else Statement: Digunakan saat memilih bulan pada Date Picker. Jika nilai bulan lebih dari 0 maka sistem akan klik tombol Next Month sesuai jumlah data.
+- Loop Statement: Digunakan untuk mengulang klik tombol Next Month sesuai jumlah bulan.
+- Switch Case: Digunakan pada Pemilihan AM / PM, dan Pemilihan Category Task
 
-## Statement
+## Test Case
+### TC001 - Create Task
+#### Tujuan:
+Memastikan user dapat menambahkan task baru dengan data valid.
+#### Langkah Testing:
+1. Buka aplikasi Todo
+2. Klik tombol Add Task
+3. Input Task Title
+4. Input Description
+5. Set Date
+6. Set Time
+7. Pilih Category
+8. Klik Save
+#### Expected Result:
+Task berhasil tersimpan dan tampil pada list task.
+#### Actual Result:
+Berhasil sesuai harapan.
 
-- If Else
+### TC002 - Delete Task
+#### Tujuan:
+Memastikan user dapat menghapus task yang sudah dibuat.
+#### Langkah Testing:
+1. Buka aplikasi
+2. Pilih menu titik tiga pada task
+3. Klik Delete
+#### Expected Result:
+Task terhapus dari daftar.
+#### Actual Result:
+Berhasil sesuai harapan.
+
+### TC003 - Validation Empty Title
+#### Tujuan:
+Memastikan sistem menolak pembuatan task tanpa judul.
+#### Langkah Testing:
+1. Klik Add Task
+2. Kosongkan field Task Title
+3. Isi data lain jika diperlukan
+4. Klik Save
+#### Expected Result:
+Task gagal dibuat / muncul validasi.
+#### Actual Result:
+Berhasil sesuai harapan.
+
+## Test Suite
+Test suite dibuat untuk menjalankan seluruh test case sekaligus: 
+### Berisi:
+- TC001 - Create Task
+- TC002 - Delete Task
+- TC003 - Validation Empty
+
+## Kesimpulan
+Automation testing pada aplikasi Todo berhasil dijalankan menggunakan Katalon Studio pada Android real device.
+### Semua skenario utama berhasil diuji dengan baik, yaitu:
+- Menambahkan task
+- Menghapus task
+- Validasi input kosong
+
+### Project ini juga berhasil menerapkan:
+- Data Driven Testing
+- If Else Statement
+- Loop Statement
 - Switch Case
 
-## Result
-
-Semua test berjalan sukses sesuai expected result.
+# Author
+Putri Khulfiani with ChatGPT
