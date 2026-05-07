@@ -103,4 +103,4 @@ Automation testing pada aplikasi Todo berhasil dijalankan menggunakan Katalon St
 - Switch Case
 
 # Author
-Putri Khulfiani with ChatGPT
+Putri Khulfiani
